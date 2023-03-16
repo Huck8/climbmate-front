@@ -31,6 +31,9 @@ export const InputFormStyled = styled.input`
   border-radius: 5px;
   background: white;
   border: 2px solid lightgray;
+  :focus-visible {
+    outline: 2px solid greenyellow;
+  }
 `;
 
 export const ButtonFormStyled = styled.button`

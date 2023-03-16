@@ -3,9 +3,9 @@ import {
   ButtonFormStyled,
   InfoRegisterStyled,
   LoginFormStyled,
-} from '../LoginFormStyled';
-import { InputFormStyled } from '../LoginFormStyled';
-import { LabelFormStyled } from '../LoginFormStyled';
+} from './LoginFormStyled';
+import { InputFormStyled } from './LoginFormStyled';
+import { LabelFormStyled } from './LoginFormStyled';
 
 const LoginForm = () => {
   // const handlerFormStyledHover = () => {

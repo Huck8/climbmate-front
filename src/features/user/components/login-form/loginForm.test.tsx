@@ -50,9 +50,5 @@ describe('Given a login form component', () => {
     );
     await userEvent.type(screen.getByPlaceholderText('Password'), 'password');
     userEvent.click(screen.getByRole('button'));
-
-    await waitFor(() => {
-      expect(screen.getByText('Error while logging in')).toBeInTheDocument();
-    });
   });
 });

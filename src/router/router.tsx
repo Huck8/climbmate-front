@@ -1,4 +1,3 @@
-import path from 'path';
 import { createBrowserRouter } from 'react-router-dom';
 import LoginPage from '../pages/Login/LoginPage';
 

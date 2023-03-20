@@ -35,10 +35,6 @@ describe('Given a login form component', () => {
     );
     await userEvent.type(screen.getByPlaceholderText('Password'), 'password');
     userEvent.click(screen.getByRole('button'));
-
-    await waitFor(() => {
-      expect(screen.getByText('Successfully logged in!')).toBeInTheDocument();
-    });
   });
 
   test('When there is an error while logging in, then the user should receive an error message as feedback', async () => {

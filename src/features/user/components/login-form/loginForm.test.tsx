@@ -50,7 +50,7 @@ describe('Given a login form component', () => {
 
     await userEvent.type(
       screen.getByPlaceholderText('Email'),
-      'email2@test.com',
+      'email3@test.com',
     );
     await userEvent.type(screen.getByPlaceholderText('Password'), 'password');
     userEvent.click(screen.getByRole('button'));

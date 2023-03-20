@@ -44,5 +44,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "prettier": "^2.8.4",
+    "msw": "^1.1.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src//*.tsx",
+      "src//*.ts",
+      "!/src/index.tsx",
+      "!/src/reportWebVitals.ts",
+      "!/src/react-app-env.d.ts",
+      "!/src/setupTests.ts"
+    ]
   }
 }

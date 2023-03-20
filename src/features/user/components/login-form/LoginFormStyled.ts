@@ -4,7 +4,7 @@ export const LoginFormStyled = styled.form`
   max-width: 500px;
   min-width: 400px;
   padding: 2rem;
-  height: 350px;
+  height: 440px;
   color: #333;
   display: flex;
   margin: 4rem auto;
@@ -17,10 +17,31 @@ export const LoginFormStyled = styled.form`
   }
 `;
 
+export const Error = styled.p`
+  max-width: 500px;
+  color: tomato;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+`;
+
+export const Success = styled.p`
+  max-width: 500px;
+  color: lime;
+  font-size: 1rem;
+
+  border-radius: 10px;
+  padding: 1rem 2rem;
+`;
+
 export const LabelFormStyled = styled.label`
   color: #333;
   text-align: left;
   margin-bottom: 0.8rem;
+  :focus-within {
+    font-weight: bold;
+    color: violet;
+  }
 `;
 
 export const InputFormStyled = styled.input`
@@ -33,6 +54,10 @@ export const InputFormStyled = styled.input`
   border: 2px solid lightgray;
   :focus-visible {
     outline: 2px solid greenyellow;
+  }
+
+  :focus {
+    background-color: lightgreen;
   }
 `;
 
@@ -50,9 +75,43 @@ export const ButtonFormStyled = styled.button`
   }
 `;
 
-// export const ButtonFormStyledHover = styled(ButtonFormStyled)`
+export const LoginStatusFeedBackError = styled.div`
+  color: orangered;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 0;
+`;
 
-// `;
+export const LoginStatusFeedBackSuccess = styled.div`
+  color: lightseagreen;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+`;
+
+export const Spiner = styled.div`
+  .spinner {
+    width: 4em;
+    height: 4em;
+    background: #a1a2a1;
+    border-radius: 50%;
+    margin: 5em auto;
+    border: 0.3em solid transparent;
+    animation: glow 1s ease infinite;
+  }
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 0 0.4em #a1a2a1, 0 0 0 0.1em #a1a2a1;
+      transform: rotate(360deg);
+    }
+    50% {
+      border-top-color: #605556;
+    }
+    100% {
+      box-shadow: 0 0 0 0.4em #a1a2a1, 0 0 0 3.6em transparent;
+    }
+  }
+`;
 
 export const InfoRegisterStyled = styled.div`
   color: gray;

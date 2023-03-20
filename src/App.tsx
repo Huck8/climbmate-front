@@ -1,11 +1,12 @@
 import React from 'react';
-
+import router from './router/router';
 import './App.css';
+import { RouterProvider } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <h1>Climbmate</h1>
+      <RouterProvider router={router} />
     </div>
   );
 }

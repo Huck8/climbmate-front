@@ -30,7 +30,7 @@ const LoginForm = () => {
         );
 
       default:
-        return;
+        return <>{loginMessage}</>;
     }
   };
   return (

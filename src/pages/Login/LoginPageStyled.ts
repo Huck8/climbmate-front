@@ -14,7 +14,7 @@ export const LoginPageStyled = styled.main`
   z-index: -1;
 
   @media (max-width: 767px) {
-    background-image: url('assets/portada-mobile.webp');
+    background-image: url('assets/portada-mobilev2.webp');
     height: 100vh;
   }
 `;

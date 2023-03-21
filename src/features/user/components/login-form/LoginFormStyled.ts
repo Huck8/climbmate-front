@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const LoginFormStyled = styled.form`
   max-width: 500px;
   /* width: 290px; */
-  height: 55vh;
+  height: 550px;
   padding: 2rem;
 
   color: #333;
@@ -13,14 +13,17 @@ export const LoginFormStyled = styled.form`
 
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.5);
-  @media (min-width: 1024px) {
+  @media (min-width: 767px) {
     margin: 4rem 3rem;
+    height: 500px;
   }
 `;
 
 export const Title = styled.h2`
-  margin: 1rem;
-  font-size: 0.9rem;
+  margin: 1rem 0;
+  color: lightseagreen;
+  text-shadow: 2px 0px 5px rgba(10, 34, 32, 0.25);
+  font-size: 1.3rem;
   font-weight: 700;
 `;
 

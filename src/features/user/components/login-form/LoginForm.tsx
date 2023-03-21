@@ -62,7 +62,9 @@ const LoginForm = () => {
             id="Password"
             required
           />
-          <ButtonFormStyled type="submit">LOGIN</ButtonFormStyled>
+          <ButtonFormStyled type="submit" disabled={status === 'loading'}>
+            LOGIN
+          </ButtonFormStyled>
           <InfoRegisterStyled>
             <p>
               ¿Have no account?<span>Sign up</span>

@@ -7,7 +7,7 @@ export const LoginPageStyled = styled.main`
   display: flex;
   justify-content: flex-end;
   background-position: 50%;
-  background-size: conver;
+  background-size: cover;
   background-repeat: no-repeat;
   top: 0;
   width: 100vw;

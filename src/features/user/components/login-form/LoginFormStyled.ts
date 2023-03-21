@@ -2,9 +2,10 @@ import styled from 'styled-components';
 
 export const LoginFormStyled = styled.form`
   max-width: 500px;
-  min-width: 400px;
+  /* width: 290px; */
+  height: 55vh;
   padding: 2rem;
-  height: 440px;
+
   color: #333;
   display: flex;
   margin: 4rem auto;
@@ -17,10 +18,16 @@ export const LoginFormStyled = styled.form`
   }
 `;
 
+export const Title = styled.h2`
+  margin: 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+`;
+
 export const Error = styled.p`
-  max-width: 500px;
-  color: tomato;
-  font-size: 1rem;
+  max-width: 400px;
+  color: violet;
+  font-size: 0.8rem;
   border-radius: 10px;
   padding: 1rem 2rem;
 `;
@@ -76,10 +83,15 @@ export const ButtonFormStyled = styled.button`
 `;
 
 export const LoginStatusFeedBackError = styled.div`
-  color: orangered;
+  color: white;
   text-align: center;
-  font-size: 1.5rem;
-  margin-top: 0;
+  margin-top: 1.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem;
+
+  border-radius: 15px;
+  background: #ff8158;
 `;
 
 export const LoginStatusFeedBackSuccess = styled.div`
@@ -87,30 +99,6 @@ export const LoginStatusFeedBackSuccess = styled.div`
   text-align: center;
   font-size: 1.5rem;
   margin-top: 3rem;
-`;
-
-export const Spiner = styled.div`
-  .spinner {
-    width: 4em;
-    height: 4em;
-    background: #a1a2a1;
-    border-radius: 50%;
-    margin: 5em auto;
-    border: 0.3em solid transparent;
-    animation: glow 1s ease infinite;
-  }
-  @keyframes glow {
-    0% {
-      box-shadow: 0 0 0 0.4em #a1a2a1, 0 0 0 0.1em #a1a2a1;
-      transform: rotate(360deg);
-    }
-    50% {
-      border-top-color: #605556;
-    }
-    100% {
-      box-shadow: 0 0 0 0.4em #a1a2a1, 0 0 0 3.6em transparent;
-    }
-  }
 `;
 
 export const InfoRegisterStyled = styled.div`
@@ -124,4 +112,10 @@ export const InfoRegisterStyled = styled.div`
       cursor: pointer;
     }
   }
+`;
+
+export const Loading = styled.div`
+  margin-top: 0.5rem;
+  color: lime;
+  text-align: center;
 `;

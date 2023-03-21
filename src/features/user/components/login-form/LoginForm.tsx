@@ -5,11 +5,12 @@ import {
   ButtonFormStyled,
   InfoRegisterStyled,
   LoginFormStyled,
-  Spiner,
   LoginStatusFeedBackError,
   LoginStatusFeedBackSuccess,
   LabelFormStyled,
   InputFormStyled,
+  Loading,
+  Title,
 } from './LoginFormStyled';
 
 const LoginForm = () => {
@@ -43,7 +44,7 @@ const LoginForm = () => {
         }}
       >
         <>
-          <h2>CLIMB WITH NEW FRIENDS</h2>
+          <Title>CLIMB WITH NEW FRIENDS</Title>
           <LabelFormStyled htmlFor="Email">Email</LabelFormStyled>
 
           <InputFormStyled
@@ -70,9 +71,7 @@ const LoginForm = () => {
         </>
 
         {status === 'loading' ? (
-          <>
-            <Spiner className="spinner"></Spiner>
-          </>
+          <Loading className="loading">Loading...</Loading>
         ) : (
           feedBackUser()
         )}

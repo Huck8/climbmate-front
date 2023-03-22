@@ -3,7 +3,6 @@ import { useAppDispatch, useAppSelector } from '../../../../app/hooks';
 import { getNewUserTokenAsync, selectUser } from '../../user-slice';
 import {
   ButtonFormStyled,
-  InfoRegisterStyled,
   LoginFormStyled,
   LoginStatusFeedBackError,
   LoginStatusFeedBackSuccess,

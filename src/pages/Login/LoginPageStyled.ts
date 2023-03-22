@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const LoginPageStyled = styled.main`
-  background-image: url('assets/portada-form.webp');
+  background-image: url('assets/portada-mobilev2.webp');
   height: 100vh;
   /* position: absolute; */
   display: flex;

@@ -3,7 +3,6 @@ import { useAppDispatch, useAppSelector } from '../../../../app/hooks';
 import { getNewUserTokenAsync, selectUser } from '../../user-slice';
 import {
   ButtonFormStyled,
-  InfoRegisterStyled,
   LoginFormStyled,
   LoginStatusFeedBackError,
   LoginStatusFeedBackSuccess,
@@ -65,11 +64,6 @@ const LoginForm = () => {
           <ButtonFormStyled type="submit" disabled={status === 'loading'}>
             LOGIN
           </ButtonFormStyled>
-          <InfoRegisterStyled>
-            <p>
-              ¿Have no account?<span>Sign up</span>
-            </p>
-          </InfoRegisterStyled>
         </>
 
         {status === 'loading' ? (

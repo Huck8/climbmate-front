@@ -104,19 +104,6 @@ export const LoginStatusFeedBackSuccess = styled.div`
   margin-top: 3rem;
 `;
 
-export const InfoRegisterStyled = styled.div`
-  color: gray;
-  text-align: right;
-  span {
-    color: blueviolet;
-    padding-left: 0.5rem;
-    :hover {
-      color: orange;
-      cursor: pointer;
-    }
-  }
-`;
-
 export const Loading = styled.div`
   margin-top: 0.5rem;
   color: lime;

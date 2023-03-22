@@ -65,11 +65,6 @@ const LoginForm = () => {
           <ButtonFormStyled type="submit" disabled={status === 'loading'}>
             LOGIN
           </ButtonFormStyled>
-          <InfoRegisterStyled>
-            <p>
-              ¿Have no account?<span>Sign up</span>
-            </p>
-          </InfoRegisterStyled>
         </>
 
         {status === 'loading' ? (

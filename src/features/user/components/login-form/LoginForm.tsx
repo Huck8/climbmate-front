@@ -1,4 +1,5 @@
 import React from 'react';
+import { Navigate } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../../../app/hooks';
 import { getNewUserTokenAsync, selectUser } from '../../user-slice';
 import {
@@ -10,7 +11,7 @@ import {
   InputFormStyled,
   Loading,
   Title,
-} from './LoginFormStyled';
+} from './login-form-styled';
 
 const LoginForm = () => {
   const dispatch = useAppDispatch();
@@ -19,13 +20,16 @@ const LoginForm = () => {
     switch (loginStatus) {
       case 'error':
         return (
-          <LoginStatusFeedBackError>{loginMessage}</LoginStatusFeedBackError>
+          <LoginStatusFeedBackError role={''}>
+            {loginMessage}
+          </LoginStatusFeedBackError>
         );
 
       case 'success':
         return (
           <LoginStatusFeedBackSuccess>
             {loginMessage}
+            <Navigate to={'/auth'} />
           </LoginStatusFeedBackSuccess>
         );
 

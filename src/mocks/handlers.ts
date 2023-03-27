@@ -20,3 +20,13 @@ export const handlers = [
     },
   ),
 ];
+
+export const errorHandlers = [
+  rest.get(
+    `${process.env.REACT_APP_API_URL}/api/v1/excursion`,
+
+    (_req, res, ctx) => {
+      return res.once(ctx.status(500), ctx.json(null));
+    },
+  ),
+];

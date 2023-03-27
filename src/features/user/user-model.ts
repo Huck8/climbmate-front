@@ -5,15 +5,15 @@ export interface User {
   password: string;
 }
 
-export interface UserStatus {
-  status: APIStatus;
-  loginStatus: 'idle' | 'success' | 'error' | 'loading';
-  loginMessage: string;
-}
-
 export interface UserToken {
   accessToken: string;
   msg: string;
+}
+
+export interface UserStatus {
+  status: APIStatus;
+  loginStatus: 'idle' | 'success' | 'error' | 'loading';
+  loginMessage: string | undefined;
 }
 
 export interface UserState extends User {}

@@ -1,8 +1,8 @@
-import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from '../../app/store';
-import { APIStatus } from '../../shared/models/api-status';
+import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { getTokenByUser } from './user-api';
 import { AuthUser, UserStatus, UserToken } from './user-model';
+import { APIStatus } from '../../shared/models/api-status';
 
 const INITIAL_STATE: UserStatus = {
   status: APIStatus.IDLE,
@@ -43,7 +43,7 @@ export const userSlice = createSlice({
           state.status = APIStatus.IDLE;
           state.loginStatus = 'success';
           state.loginMessage = action.payload.msg;
-          sessionStorage.setItem('Bearer', action.payload.accessToken);
+          sessionStorage.setItem('accessToken', action.payload.accessToken);
         },
       )
 

@@ -5,7 +5,7 @@ export const ExcursionCardContainer = styled.article`
   margin: 1rem;
   user-select: none;
   border-radius: 12px;
-  border: 1.5px solid rgb(21 21 21);
+  border: 3px solid #333;
   overflow: hidden;
   padding: 0;
   background: #333;
@@ -22,11 +22,12 @@ export const TitleExcursionStyled = styled.h2`
   background: blueviolet;
   text-align: center;
   text-transform: uppercase;
-  color: #ff00d4;
+  letter-spacing: 1px;
+  color: mediumspringgreen;
   font-size: 1.2rem;
   padding: 1rem;
   max-height: 100px;
-  text-shadow: 1px 2px 0px #ffde19;
+  text-shadow: 1px 2px 0px #333;
 `;
 
 export const ImageExcursionStyled = styled.div`
@@ -60,7 +61,9 @@ export const InfoExcursionStyled = styled.div`
   p {
     padding: 0.1rem;
     font-size: 0.9rem;
-    text-transform: uppercase;
+    color: #444;
+
+    /* text-transform: uppercase; */
   }
   display: flex;
   flex-direction: column;

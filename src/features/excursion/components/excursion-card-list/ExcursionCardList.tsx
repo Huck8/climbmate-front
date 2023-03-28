@@ -1,5 +1,7 @@
 import { FC } from 'react';
+import { Link } from 'react-router-dom';
 import { useAppSelector } from '../../../../app/hooks';
+import { ExcursionCreate } from '../../../../pages/Card/CardPageStyled';
 import { APIStatus } from '../../../../shared/models/api-status';
 import { Excursion } from '../../../../shared/models/excursion-model';
 import { selectExcursions } from '../../excursion-slice';
@@ -24,6 +26,9 @@ const ExcursionCardList: FC<ExcursionCardListProps> = ({ excursions }) => {
       return (
         <ExcursionCardListContainerMain>
           <TitleExcursionStyled>Excursions</TitleExcursionStyled>
+          <Link to={'#'}>
+            <ExcursionCreate>Create Excursion</ExcursionCreate>
+          </Link>
           {excursions.map(excursion => (
             <ExcursionCardListOne key={excursion.nameExcursion}>
               <ExcursionCard excursion={excursion} />

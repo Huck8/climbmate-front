@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const TitleExcursionStyled = styled.h2`
-  color: blueviolet;
+  color: transparent;
   text-align: center;
   font-weight: 800;
   font-size: 2rem;

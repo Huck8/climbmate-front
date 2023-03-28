@@ -5,7 +5,7 @@ import {
   getAllExcursionsAsync,
   selectExcursions,
 } from '../../features/excursion/excursion-slice';
-import { ExcursionCardPageStyled } from './CardPageStyled';
+import { ExcursionCardPageStyled, ExcursionCreate } from './CardPageStyled';
 
 export const ExcursionCardPage = () => {
   const dispatch = useAppDispatch();

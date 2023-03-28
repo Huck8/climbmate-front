@@ -25,10 +25,10 @@ const ExcursionCard: FC<ExcursionCardProps> = ({ excursion }) => {
         }
       </ImageExcursionStyled>
       <InfoExcursionStyled>
-        <p>Excursion:{excursion.nameExcursion}</p>
-        <p>Level:{excursion.difficultyLevel}</p>
+        <p>Excursion: {excursion.nameExcursion}</p>
+        <p>Level: {excursion.difficultyLevel}</p>
         {/* <p>{excursion.needEquipment}</p> */}
-        <p>Organizator:{excursion.creator}</p>
+        <p>Organizer: {excursion.creator}</p>
       </InfoExcursionStyled>
       <ButtonExcursionStyled>Adventure</ButtonExcursionStyled>
     </ExcursionCardContainer>

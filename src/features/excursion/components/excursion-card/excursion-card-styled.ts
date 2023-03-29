@@ -8,7 +8,6 @@ export const ExcursionCardContainer = styled.article`
   border: 3px solid #333;
   overflow: hidden;
   padding: 0;
-  background: #333;
 
   :hover {
     -webkit-box-shadow: 10px 10px 0px 2px rgba(255, 0, 212, 1);

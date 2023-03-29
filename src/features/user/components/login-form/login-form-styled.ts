@@ -29,7 +29,7 @@ export const Title = styled.h2`
   font-family: arial;
 `;
 
-export const Error = styled.p`
+export const MessageError = styled.p`
   max-width: 400px;
   color: violet;
   font-size: 0.8rem;

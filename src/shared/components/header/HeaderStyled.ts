@@ -25,7 +25,7 @@ export const HeaderStyled = styled.header`
 
   nav a {
     text-decoration: none;
-    color: springgreen;
+    color: #fff;
     font-size: 14px;
     font-weight: 500;
     padding: 0 0.5rem;

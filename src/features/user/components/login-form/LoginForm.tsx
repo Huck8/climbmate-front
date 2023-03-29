@@ -29,7 +29,7 @@ const LoginForm = () => {
         return (
           <LoginStatusFeedBackSuccess>
             {loginMessage}
-            <Navigate to={'/auth'} />
+            <Navigate to={'/excursions'} />
           </LoginStatusFeedBackSuccess>
         );
 

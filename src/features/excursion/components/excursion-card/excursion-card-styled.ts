@@ -31,6 +31,9 @@ export const TitleExcursionStyled = styled.h2`
 `;
 
 export const ImageExcursionStyled = styled.div`
+  img {
+    width: 100%;
+  }
   min-width: 100%;
   height: 300px;
   overflow: hidden;

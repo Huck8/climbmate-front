@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const LoginPageStyled = styled.main`
-  background-image: url('assets/portada-mobilev2.webp');
+  background-image: url('assets/redmountains.webp');
   height: 100vh;
   /* position: absolute; */
   display: flex;
@@ -14,7 +14,7 @@ export const LoginPageStyled = styled.main`
   z-index: -1;
 
   @media (max-width: 767px) {
-    background-image: url('assets/portada-mobilev2.webp');
+    background-image: url('assets/redmountains.webp');
     height: 100vh;
   }
 `;

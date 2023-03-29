@@ -12,7 +12,7 @@ export const LoginFormStyled = styled.form`
   flex-direction: column;
 
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.3);
   @media (min-width: 767px) {
     margin: 4rem 3rem;
     height: 500px;
@@ -20,14 +20,20 @@ export const LoginFormStyled = styled.form`
 `;
 
 export const Title = styled.h2`
-  margin: 1rem 0;
-  color: lightseagreen;
-  text-shadow: 2px 0px 5px rgba(10, 34, 32, 0.25);
-  font-size: 1.3rem;
+  margin: 1rem 0px;
+  color: blueviolet;
+  text-shadow: rgba(10, 34, 32, 0.5) 2px 0px 5px;
+  font-size: 1.4rem;
+  text-align: center;
   font-weight: 700;
+  font-family: arial;
+
+  @media (min-width: 767px) {
+    color: white;
+  }
 `;
 
-export const Error = styled.p`
+export const MessageError = styled.p`
   max-width: 400px;
   color: violet;
   font-size: 0.8rem;
@@ -75,13 +81,15 @@ export const ButtonFormStyled = styled.button`
   width: 100%;
   border-radius: 20px;
   margin: 1rem auto;
-  background: lightCoral;
-  color: white;
+  background: mediumspringgreen;
+  color: blueviolet;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 1rem;
   border: 0 solid transparent;
   :hover {
-    background: teal;
-    color: lime;
+    background: blueviolet;
+    color: mediumspringgreen;
   }
 `;
 

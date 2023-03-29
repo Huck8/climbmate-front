@@ -21,6 +21,7 @@ export const ExcursionCreate = styled.button`
   top: 1.4rem;
   right: 18%;
   left: 18%;
+  display: none;
   :hover {
     background: #00fa9a;
     color: #8a2be2;

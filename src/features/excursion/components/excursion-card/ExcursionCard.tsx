@@ -16,13 +16,7 @@ const ExcursionCard: FC<ExcursionCardProps> = ({ excursion }) => {
     <ExcursionCardContainer>
       <TitleExcursionStyled>{excursion.nameExcursion}</TitleExcursionStyled>
       <ImageExcursionStyled>
-        {
-          <img
-            src={excursion.imgExcursion}
-            alt={excursion.nameExcursion}
-            width="100%"
-          ></img>
-        }
+        {<img src={excursion.imgExcursion} alt={excursion.nameExcursion}></img>}
       </ImageExcursionStyled>
       <InfoExcursionStyled>
         <p>Excursion: {excursion.nameExcursion}</p>

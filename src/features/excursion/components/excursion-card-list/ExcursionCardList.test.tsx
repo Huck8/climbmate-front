@@ -1,38 +1,3 @@
-// import React from 'react';
-// import { render, screen } from '@testing-library/react';
-// import ExcursionCardList, { ExcursionCardListProps } from './ExcursionCardList';
-
-// describe('ExcursionCardList', () => {
-//   const mockExcursions = [
-//     {
-//       imgExcursion: 'https://example.com/img1',
-//       nameExcursion: 'Excursion 1',
-//       date: new Date(),
-//       difficultyLevel: 'Easy',
-//       needEquipment: false,
-//       creator: 'John Doe',
-//     },
-//     {
-//       imgExcursion: 'https://example.com/img2',
-//       nameExcursion: 'Excursion 2',
-//       date: new Date(),
-//       difficultyLevel: 'Intermediate',
-//       needEquipment: true,
-//       creator: 'Jane Smith',
-//     },
-//   ];
-
-//   test('should render a list of excursions', () => {
-//     render(<ExcursionCardList excursions={mockExcursions} />);
-//     const excursionListContainer = screen.getByTestId(
-//       'excursion-card-list-container',
-//     );
-//     expect(excursionListContainer).toBeInTheDocument();
-//     const excursionCards = screen.getAllByTestId('excursion-card');
-//     expect(excursionCards.length).toBe(mockExcursions.length);
-//   });
-// });
-
 import { screen, waitFor } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { errorHandlers } from '../../../../mocks/handlers';

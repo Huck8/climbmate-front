@@ -9,16 +9,18 @@ export const Header = () => {
   return (
     <HeaderStyled>
       <div className="logo">
-        <img src="/assets/climb-solo.png" alt="logo" />
+        <Link aria-label="Go to home page" to={''}>
+          <img src="/assets/climb-solo.png" alt="logo" />
+        </Link>
       </div>
       <div className="logodesk">
         <img src="/assets/climb-no-background.png" alt="logo" />
       </div>
       <nav>
-        <Link to={''}>
+        <Link aria-label="Go to home page" to={''}>
           <p>Home</p>
         </Link>
-        <Link to={'/excursions'}>
+        <Link aria-label="Create your excursion" to={'/excursions'}>
           <p>Excursions</p>
         </Link>
         <Link

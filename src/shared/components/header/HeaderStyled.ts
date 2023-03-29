@@ -17,7 +17,7 @@ export const HeaderStyled = styled.header`
   }
 
   nav {
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
     display: flex;
     text-decoration: none;
     align-items: center;
@@ -29,6 +29,9 @@ export const HeaderStyled = styled.header`
     font-size: 14px;
     font-weight: 500;
     padding: 0 0.5rem;
+    :hover {
+      color: gold;
+    }
   }
 
   nav a img {

@@ -21,12 +21,16 @@ export const LoginFormStyled = styled.form`
 
 export const Title = styled.h2`
   margin: 1rem 0px;
-  color: aliceblue;
-  text-shadow: rgba(10, 34, 32, 0.25) 2px 0px 5px;
+  color: blueviolet;
+  text-shadow: rgba(10, 34, 32, 0.5) 2px 0px 5px;
   font-size: 1.4rem;
   text-align: center;
   font-weight: 700;
   font-family: arial;
+
+  @media (min-width: 767px) {
+    color: white;
+  }
 `;
 
 export const MessageError = styled.p`

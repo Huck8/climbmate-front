@@ -14,7 +14,7 @@ export const LoginPageStyled = styled.main`
   z-index: -1;
 
   @media (max-width: 767px) {
-    background-image: url('assets/abs.webp');
+    background-image: url('assets/redmountains.webp');
     height: 100vh;
   }
 `;

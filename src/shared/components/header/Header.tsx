@@ -9,9 +9,7 @@ export const Header = () => {
   return (
     <HeaderStyled>
       <div className="logo">
-        <Link aria-label="Go to home page" to={''}>
-          <img src="/assets/climb-solo.png" alt="logo" />
-        </Link>
+        <img src="/assets/climb-solo.png" alt="logo" />
       </div>
       <div className="logodesk">
         <img src="/assets/climb-no-background.png" alt="logo" />

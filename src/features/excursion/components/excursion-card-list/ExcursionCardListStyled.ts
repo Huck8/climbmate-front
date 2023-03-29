@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const TitleExcursionStyled = styled.h2`
-  color: blueviolet;
+  color: #7d41b3;
   text-align: center;
   font-weight: 800;
   font-size: 1rem;
@@ -14,7 +14,7 @@ export const TitleExcursionStyled = styled.h2`
   position: relative;
 
   @media (min-width: 767px) {
-    color: blueviolet;
+    color: #7d41b3;
     margin-bottom: 2rem;
   }
 

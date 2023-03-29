@@ -55,7 +55,7 @@ describe('Given a header component', () => {
     const linksElement = screen.getAllByRole('link');
 
     expect(logoElement.length).toEqual(2);
-    expect(linksElement.length).toEqual(3);
+    expect(linksElement.length).toEqual(4);
   });
 
   test('When the user clicks on logout button, it should call the handleLogout function', () => {

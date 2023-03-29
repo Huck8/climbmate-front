@@ -1,15 +1,17 @@
 import styled from 'styled-components';
 
 export const TitleExcursionStyled = styled.h2`
-  color: transparent;
+  color: blueviolet;
   text-align: center;
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 1rem;
   text-transform: uppercase;
-  padding: 1.8rem;
+  letter-spacing: 1px;
+  padding: 0.8rem;
   background: mediumspringgreen;
   width: 100%;
   margin-bottom: 1rem;
+  position: relative;
 
   @media (min-width: 767px) {
     color: blueviolet;

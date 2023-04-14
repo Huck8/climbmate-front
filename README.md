@@ -1,3 +1,4 @@
+
 🟢 Limbmate Projects Application Front End 🟢
 
 This project was bootstrapped with Create React App, using the Redux and Redux Toolkit TS template. This is the front-end for the web application Climbmate Projects.

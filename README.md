@@ -1,46 +1,30 @@
-# Getting Started with Create React App
+Excursiones de Escalada
+Este es un proyecto de una aplicación SPA (Single Page Application) desarrollada con React y Express, utilizando TypeScript para asegurar una mayor calidad del código y prevenir errores comunes. Además, se ha utilizado Eslint para mantener un código limpio y consistente en todo el proyecto.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
+La aplicación permite a los usuarios crear excursiones de escalada y hacer reservas en las excursiones creadas por otros usuarios. Cada usuario tiene su propio perfil y puede ver sus excursiones y reservas. Además, se ha implementado un sistema de pagos en línea para reservar las excursiones.
 
-## Available Scripts
+Para asegurar la calidad del código y el correcto funcionamiento de la aplicación, se han creado pruebas unitarias y de integración con Jest. Las pruebas se ejecutan automáticamente en cada commit para asegurar que la aplicación siempre esté funcionando correctamente.
 
-In the project directory, you can run:
+Funcionalidades
+Creación de excursiones de escalada
+Reserva de excursiones creadas por otros usuarios
+Gestión de perfil de usuario
+Sistema de pagos en línea
+Pruebas unitarias y de integración con Jest
+Tecnologías utilizadas
+React
+Express
+TypeScript
+Eslint
+Jest
+Instalación y uso
+Para instalar la aplicación, es necesario clonar este repositorio y ejecutar npm install en la carpeta raíz. A continuación, se pueden ejecutar los siguientes comandos:
 
-### `npm start`
+npm run start para iniciar la aplicación en modo de desarrollo
+npm run build para construir la aplicación para producción
+npm run test para ejecutar las pruebas
+Contribución
+¡Se agradecen las contribuciones! Si deseas colaborar en este proyecto, por favor abre una issue o envía una solicitud de pull request.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Licencia
+Este proyecto está bajo la licencia MIT.

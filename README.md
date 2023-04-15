@@ -58,5 +58,5 @@ npm run test para ejecutar las pruebas
 Contribución
 ¡Se agradecen las contribuciones! Si deseas colaborar en este proyecto, por favor abre una issue o envía una solicitud de pull request.
 
-Licencia
+Licencia:
 Este proyecto está bajo la licencia MIT.

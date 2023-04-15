@@ -1,5 +1,10 @@
-import { ThunkAction, Action, combineReducers } from '@reduxjs/toolkit';
-import { configureStore, PreloadedState } from '@reduxjs/toolkit';
+import {
+  ThunkAction,
+  Action,
+  combineReducers,
+  configureStore,
+  PreloadedState,
+} from '@reduxjs/toolkit';
 import userReducer from '../features/user/user-slice';
 import excursionReducer from '../features/excursion/excursion-slice';
 export const store = configureStore({

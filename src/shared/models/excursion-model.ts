@@ -3,7 +3,7 @@ export interface Excursion {
   nameExcursion: string;
   date: Date;
   difficultyLevel: string;
-  needEquipment: boolean;
+  equipment: string;
   creator: string;
 }
 

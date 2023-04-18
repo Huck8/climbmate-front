@@ -29,7 +29,8 @@ const LoginForm = () => {
         return (
           <LoginStatusFeedBackSuccess>
             {loginMessage}
-            <Navigate to={'/excursions'} />
+            {/* <Navigate to={'/excursions'} /> */}
+            <Navigate to={'/excursion-form'} />
           </LoginStatusFeedBackSuccess>
         );
 

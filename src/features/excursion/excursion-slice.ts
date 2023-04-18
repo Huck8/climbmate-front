@@ -2,13 +2,14 @@ import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from '../../app/store';
 import { APIStatus } from '../../shared/models/api-status';
 import { Excursion } from '../../shared/models/excursion-model';
-import { getAllExcursions } from './excursion-api';
+import { createNewExcursion, getAllExcursions } from './excursion-api';
 
 interface ExcursionStatus {
   status: APIStatus;
   excursionStatus: 'loading' | 'success' | 'error' | 'idle';
   excursionMessage: string | undefined;
   excursions: Excursion[];
+  createExcursionStatus: 'loading' | 'success' | 'error' | 'idle';
 }
 
 const STATE_NAME = 'excursion';
@@ -18,11 +19,17 @@ export interface ExcursionResponse {
   excursions: Excursion[];
 }
 
+export interface CreateExcursionResponse {
+  msg: string;
+  excursions: Excursion;
+}
+
 const initialState: ExcursionStatus = {
   status: APIStatus.IDLE,
   excursionStatus: 'idle',
   excursionMessage: '',
   excursions: [],
+  createExcursionStatus: 'idle',
 };
 
 export const getAllExcursionsAsync = createAsyncThunk(
@@ -34,6 +41,19 @@ export const getAllExcursionsAsync = createAsyncThunk(
       throw new Error(data.msg);
     }
 
+    return data;
+  },
+);
+
+export const createNewExcursionAsync = createAsyncThunk(
+  `${STATE_NAME}/createExcursion`,
+  async (form: HTMLFormElement) => {
+    const newExcursionForm = new FormData(form);
+    const apiResponse = await createNewExcursion(newExcursionForm);
+    const data: CreateExcursionResponse = await apiResponse.json();
+    if (!apiResponse.ok) {
+      throw new Error(data.msg);
+    }
     return data;
   },
 );
@@ -61,6 +81,24 @@ export const excursionSlice = createSlice({
       .addCase(getAllExcursionsAsync.rejected, (state, action) => {
         state.status = APIStatus.ERROR;
         state.excursionStatus = 'error';
+        state.excursionMessage = action.error.message;
+      })
+
+      .addCase(createNewExcursionAsync.pending, state => {
+        state.status = APIStatus.LOADING;
+        state.createExcursionStatus = 'loading';
+      })
+      .addCase(
+        createNewExcursionAsync.fulfilled,
+        (state, action: PayloadAction<CreateExcursionResponse>) => {
+          state.status = APIStatus.IDLE;
+          state.createExcursionStatus = 'success';
+          state.excursionMessage = action.payload.msg;
+        },
+      )
+      .addCase(createNewExcursionAsync.rejected, (state, action) => {
+        state.status = APIStatus.ERROR;
+        state.createExcursionStatus = 'error';
         state.excursionMessage = action.error.message;
       });
   },

@@ -55,7 +55,7 @@ Para instalar la aplicación, es necesario clonar este repositorio y ejecutar np
 npm run start para iniciar la aplicación en modo de desarrollo
 npm run build para construir la aplicación para producción
 npm run test para ejecutar las pruebas
-Contribución.
+Contribución
 Se agradecen las contribuciones! Si deseas colaborar en este proyecto, por favor abre una issue o envía una solicitud de pull request.
 
 Licencia:

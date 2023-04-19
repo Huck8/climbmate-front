@@ -70,7 +70,7 @@ export const InputFormStyled = styled.input`
   border: 2px solid lightgray;
   :focus-visible {
     outline: 2px solid greenyellow;
-  }
+  
 
   :focus {
     background-color: lightgreen;
@@ -113,7 +113,7 @@ export const LoginStatusFeedBackSuccess = styled.div`
 `;
 
 export const Loading = styled.div`
-   {
+   
     width: 20px;
     height: 20px;
     position: relative;

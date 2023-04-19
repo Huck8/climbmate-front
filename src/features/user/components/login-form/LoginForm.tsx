@@ -72,7 +72,8 @@ const LoginForm = () => {
         </>
 
         {status === 'loading' ? (
-          <Loading className="loading">Loading...</Loading>
+          // <Loading className="loading">Loading...</Loading>
+          <Loading className="loader"></Loading>
         ) : (
           feedBackUser()
         )}

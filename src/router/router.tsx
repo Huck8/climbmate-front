@@ -21,11 +21,11 @@ const router = createBrowserRouter([
     element: <MainLayout />,
     children: [
       {
-        path: 'excursion-form',
+        path: '/excursion-form',
         element: <CreateFormPage />,
       },
       {
-        path: 'excursions',
+        path: '/excursions',
         element: <CardPage />,
       },
     ],

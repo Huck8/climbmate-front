@@ -113,7 +113,39 @@ export const LoginStatusFeedBackSuccess = styled.div`
 `;
 
 export const Loading = styled.div`
-  margin-top: 0.5rem;
-  color: lime;
-  text-align: center;
+   {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border-radius: 50%;
+    color: mediumspringgreen;
+    margin: 0 auto;
+    animation: fill 1s ease-in infinite alternate;
+  }
+  ::before,
+  ::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    left: 48px;
+    top: 0;
+    animation: fill 0.9s ease-in infinite alternate;
+  }
+
+  ::after {
+    left: auto;
+    right: 48px;
+    animation-duration: 1.1s;
+  }
+
+  @keyframes fill {
+    0% {
+      box-shadow: 0 0 0 1px inset;
+    }
+    100% {
+      box-shadow: 0 0 0 10px inset;
+    }
+  }
 `;

@@ -12,10 +12,13 @@ export const Header = () => {
         <img src="/assets/climb-solo.png" alt="logo" />
       </div>
       <div className="logodesk">
-        <img src="/assets/climb-no-background.png" alt="logo" />
+        <Link aria-label="Go to home page" to={'/excursion-form'}>
+          <img src="/assets/climb-no-background.png" alt="logo" />
+        </Link>
       </div>
       <nav>
-        <Link aria-label="Go to home page" to={''}>
+        {' '}
+        <Link aria-label="Go to home page" to={'/excursion-form'}>
           <p>Home</p>
         </Link>
         <Link aria-label="Create your excursion" to={'/excursions'}>

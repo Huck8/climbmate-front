@@ -20,7 +20,7 @@ describe('Given a continent card list component', () => {
           nameExcursion: 'Excursion 1',
           date: new Date(),
           difficultyLevel: 'Easy',
-          needEquipment: false,
+          equipment: 'Yes',
           creator: 'John Doe',
         },
         {
@@ -28,7 +28,7 @@ describe('Given a continent card list component', () => {
           nameExcursion: 'Excursion 2',
           date: new Date(),
           difficultyLevel: 'Intermediate',
-          needEquipment: true,
+          equipment: 'No',
           creator: 'Jane Smith',
         },
       ];

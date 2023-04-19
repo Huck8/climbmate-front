@@ -1,8 +1,30 @@
 import styled from 'styled-components';
 
+export const ExcursionHeroImageStyled = styled.div``;
+
 export const ExcursionCardPageStyled = styled.main`
   margin: auto;
   height: 100vh;
+
+  background: #f3f3f3;
+
+  .hero {
+    background-image: url('https://cdn.aarp.net/content/dam/aarp/tourism/national/2017/10/1140-maroon-bells-mountains-north-america-esp.imgcache.rev3ae52edfa9863c5cf8680f82006b8b2d.web.1140.655.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    z-index: 99;
+  }
+  ul {
+    justify-content: space-between;
+    width: 1300px;
+    justify-contente: center;
+    margin: 1rem auto;
+  }
+
+  ul li article {
+    margin: 1rem 0;
+  }
 `;
 
 export const ExcursionCreate = styled.button`

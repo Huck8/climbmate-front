@@ -24,6 +24,7 @@ export const renderWithProviders = (
         excursionStatus: 'idle',
         excursionMessage: '',
         excursions: [],
+        createExcursionStatus: 'idle',
       },
     },
     store = setupStore(preloadedState),

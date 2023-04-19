@@ -5,7 +5,10 @@ import {
   getAllExcursionsAsync,
   selectExcursions,
 } from '../../features/excursion/excursion-slice';
-import { ExcursionCardPageStyled } from './CardPageStyled';
+import {
+  ExcursionCardPageStyled,
+  ExcursionHeroImageStyled,
+} from './CardPageStyled';
 
 export const ExcursionCardPage = () => {
   const dispatch = useAppDispatch();
@@ -15,6 +18,7 @@ export const ExcursionCardPage = () => {
   }, [dispatch]);
   return (
     <ExcursionCardPageStyled>
+      <ExcursionHeroImageStyled className="hero"></ExcursionHeroImageStyled>
       <ExcursionCardList
         excursions={excursionState.excursions}
       ></ExcursionCardList>

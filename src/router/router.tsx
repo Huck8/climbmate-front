@@ -3,6 +3,7 @@ import MainLayout from '../layout/MainLayout';
 import CardPage from '../pages/Card/CardPage';
 
 import { LoginPage } from '../pages/Login/LoginPage';
+import CreateFormPage from '../pages/CreateFormPage/CreateFormPage';
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,11 @@ const router = createBrowserRouter([
     element: <MainLayout />,
     children: [
       {
-        path: 'excursions',
+        path: '/excursion-form',
+        element: <CreateFormPage />,
+      },
+      {
+        path: '/excursions',
         element: <CardPage />,
       },
     ],

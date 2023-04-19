@@ -8,7 +8,7 @@ export const TitleExcursionStyled = styled.h2`
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 0.8rem;
-  background: mediumspringgreen;
+
   width: 100%;
   margin-bottom: 1rem;
   position: relative;
@@ -16,6 +16,7 @@ export const TitleExcursionStyled = styled.h2`
   @media (min-width: 767px) {
     color: #7d41b3;
     margin-bottom: 2rem;
+    font-size: 3rem;
   }
 
   @media (min-width: 500px) {

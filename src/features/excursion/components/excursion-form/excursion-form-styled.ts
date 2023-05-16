@@ -15,7 +15,7 @@ export const ExcursionFormContainer = styled.form`
   background: mediumspringgreen;
   margin-top: 50px;
   border-radius: 30px;
-  padding: 30px;
+  padding: 20px;
   label {
     margin-top: 10px;
   }
@@ -23,7 +23,7 @@ export const ExcursionFormContainer = styled.form`
     font-family: 'Nunito Sans', sans-serif;
     padding: 10px;
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -36,7 +36,7 @@ export const ExcursionFormContainer = styled.form`
     font-family: 'Nunito Sans', sans-serif;
     padding: 10px;
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -48,7 +48,7 @@ export const ExcursionFormContainer = styled.form`
     width: 100%;
   }
   fieldset {
-    margin-top: 20px;
+    margin-top: 10px;
     border: none;
     display: flex;
     flex-direction: row;
@@ -61,7 +61,7 @@ export const ExcursionFormContainer = styled.form`
     align-items: baseline;
   }
   legend {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   div {
     display: flex;
@@ -72,7 +72,7 @@ export const ExcursionFormContainer = styled.form`
   }
 
   input#imgExcursion {
-    margin-top: 1rem;
+    margin-top: rem;
   }
 
   button[type='submit'] {
@@ -84,7 +84,7 @@ export const ExcursionFormContainer = styled.form`
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    margin-top: 3rem;
+    margin-top: 2rem;
     :hover {
       background: #333;
       color: blueviolet;

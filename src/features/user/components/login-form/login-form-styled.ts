@@ -113,15 +113,14 @@ export const LoginStatusFeedBackSuccess = styled.div`
 `;
 
 export const Loading = styled.div`
-   
-    width: 20px;
-    height: 20px;
-    position: relative;
-    border-radius: 50%;
-    color: mediumspringgreen;
-    margin: 0 auto;
-    animation: fill 1s ease-in infinite alternate;
-  }
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border-radius: 50%;
+  color: mediumspringgreen;
+  margin: 0 auto;
+  animation: fill 1s ease-in infinite alternate;
+
   ::before,
   ::after {
     content: '';

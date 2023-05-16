@@ -16,17 +16,19 @@ describe('Given a continent card list component', () => {
     test('Then it should response with a article', async () => {
       const excursion: Excursion[] = [
         {
+          _id: '',
           imgExcursion: 'https://example.com/img1',
           nameExcursion: 'Excursion 1',
-          date: new Date(),
+          // date: new Date(),
           difficultyLevel: 'Easy',
           equipment: 'Yes',
           creator: 'John Doe',
         },
         {
+          _id: '',
           imgExcursion: 'https://example.com/img2',
           nameExcursion: 'Excursion 2',
-          date: new Date(),
+          // date: new Date(),
           difficultyLevel: 'Intermediate',
           equipment: 'No',
           creator: 'Jane Smith',

@@ -1,26 +1,32 @@
-import React, { FC } from 'react';
-import { Excursion } from '../../../../shared/models/excursion-model';
+import React, { FC, useEffect } from 'react';
 import {
   ButtonExcursionStyled,
+  ExcursionCardContainer,
   ImageExcursionStyled,
   InfoExcursionStyled,
   TitleExcursionStyled,
-  ExcursionCardContainer,
-} from './excursion-card-styled';
-// import { Link } from 'react-router-dom';
+} from '../excursion-card/excursion-card-styled';
+import { getExcursionByIdAsync, selectExcursions } from '../../excursion-slice';
+import { useAppDispatch, useAppSelector } from '../../../../app/hooks';
 
-interface ExcursionCardProps {
-  excursion: Excursion;
+interface ExcursionCardDetailsProps {
+  _id: string;
 }
-const ExcursionCard: FC<ExcursionCardProps> = ({ excursion }) => {
-  const { _id } = excursion;
+
+const ExcursionCardDetails: FC<ExcursionCardDetailsProps> = ({ _id }) => {
+  const { excursion } = useAppSelector(selectExcursions);
+  const dispatch = useAppDispatch();
+  useEffect(() => {
+    dispatch(getExcursionByIdAsync(_id));
+  }, [dispatch, _id]);
+
   return (
     <ExcursionCardContainer>
       <TitleExcursionStyled>{excursion.nameExcursion}</TitleExcursionStyled>
       <ImageExcursionStyled>
         {
           <img
-            src={excursion.imgExcursion} // Aquí estoy desectructurando.
+            src={excursion.imgExcursion}
             width={'350px'}
             alt={excursion.nameExcursion} //Aquí no estoy desesctructurando.
           ></img>
@@ -32,11 +38,10 @@ const ExcursionCard: FC<ExcursionCardProps> = ({ excursion }) => {
         <p>Need Equipment: {excursion.equipment}</p>
         <p>Organizer: {excursion.creator}</p>
       </InfoExcursionStyled>
-      {/* <Link to={`/excursions-detail/${_id}`}> */}
+
       <ButtonExcursionStyled>Adventure</ButtonExcursionStyled>
-      {/* </Link> */}
     </ExcursionCardContainer>
   );
 };
 
-export default ExcursionCard;
+export default ExcursionCardDetails;

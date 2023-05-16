@@ -32,10 +32,11 @@ export const TitleExcursionStyled = styled.h2`
 export const ImageExcursionStyled = styled.div`
   img {
     width: 100%;
+    position: center;
     max-width: 300px;
   }
   min-width: 100%;
-  height: 300px;
+  // height: 200px;
   overflow: hidden;
   padding: 0;
   background-size: contain;

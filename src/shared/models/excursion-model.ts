@@ -1,7 +1,8 @@
 export interface Excursion {
+  _id: string;
   imgExcursion: string;
   nameExcursion: string;
-  date: Date;
+  // date: Date;
   difficultyLevel: string;
   equipment: string;
   creator: string;

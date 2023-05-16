@@ -3,9 +3,13 @@ import { Navigate } from 'react-router-dom';
 import { useAppSelector } from '../../app/hooks';
 import ExcursionForm from '../../features/excursion/components/excursion-form/ExcursionForm';
 import { selectExcursions } from '../../features/excursion/excursion-slice';
-import { ExcursionFormStatusFeedBackError } from './create-form-page-styled';
 
-export const CreateFormPages = () => {
+import {
+  CreateFormPageContainer,
+  ExcursionFormStatusFeedBackError,
+} from './create-form-page-styled';
+
+export const CreateFormPage = () => {
   const { createExcursionStatus } = useAppSelector(selectExcursions);
   const feedBackUserExcursionForm = () => {
     switch (createExcursionStatus) {
@@ -22,11 +26,12 @@ export const CreateFormPages = () => {
   };
 
   return (
-    <div>
+    <CreateFormPageContainer>
+      <h1>Inscríbete</h1>
       <ExcursionForm></ExcursionForm>
       {feedBackUserExcursionForm()}
-    </div>
+    </CreateFormPageContainer>
   );
 };
 
-export default CreateFormPages;
+export default CreateFormPage;

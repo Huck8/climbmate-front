@@ -22,24 +22,27 @@ const ExcursionCardDetails: FC<ExcursionCardDetailsProps> = ({ _id }) => {
 
   return (
     <ExcursionCardContainer>
-      <TitleExcursionStyled>{excursion.nameExcursion}</TitleExcursionStyled>
-      <ImageExcursionStyled>
-        {
-          <img
-            src={excursion.imgExcursion}
-            width={'350px'}
-            alt={excursion.nameExcursion} //Aquí no estoy desesctructurando.
-          ></img>
-        }
-      </ImageExcursionStyled>
-      <InfoExcursionStyled>
-        <p>Excursion: {excursion.nameExcursion}</p>
-        <p>Level: {excursion.difficultyLevel}</p>
-        <p>Need Equipment: {excursion.equipment}</p>
-        <p>Organizer: {excursion.creator}</p>
-      </InfoExcursionStyled>
-
-      <ButtonExcursionStyled>Adventure</ButtonExcursionStyled>
+      {excursion ? (
+        <>
+          <TitleExcursionStyled>{excursion.nameExcursion}</TitleExcursionStyled>
+          <ImageExcursionStyled>
+            <img
+              src={excursion.imgExcursion}
+              width={'350px'}
+              alt={excursion.nameExcursion}
+            ></img>
+          </ImageExcursionStyled>
+          <InfoExcursionStyled>
+            <p>Excursion: {excursion.nameExcursion}</p>
+            <p>Level: {excursion.difficultyLevel}</p>
+            <p>Need Equipment: {excursion.equipment}</p>
+            <p>Organizer: {excursion.creator}</p>
+          </InfoExcursionStyled>
+          <ButtonExcursionStyled>Adventure</ButtonExcursionStyled>
+        </>
+      ) : (
+        <p>Loading...</p>
+      )}
     </ExcursionCardContainer>
   );
 };

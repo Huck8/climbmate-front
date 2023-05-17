@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <FooterStyled>
       <ul>
-        <li>Uno</li>
-        <li>Dos</li>
+        <li>About us</li>
+        <li>Hire</li>
         <li>
           <img src="/assets/climb-no-background.png" alt="logo climbmate"></img>
         </li>

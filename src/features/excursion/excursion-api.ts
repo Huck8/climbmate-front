@@ -14,8 +14,8 @@ export const getAllExcursions = async () => {
 };
 export const getExcursionById = async (id: string) => {
   const response = await fetch(
-    // `${process.env.REACT_APP_API_URL}/api/v1/excursion/${id}`,
-    `http://localhost:4000/api/v1/excursion/${id}`,
+    `${process.env.REACT_APP_API_URL}/api/v1/excursion/${id}`,
+    //`http://localhost:4000/api/v1/excursion/${id}`,
     {
       headers: {
         Authorization: `Bearer ${sessionStorage.getItem('accessToken')}`,

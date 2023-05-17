@@ -10,7 +10,7 @@ export const ExcursionFormContainer = styled.form`
   font-size: 1rem;
   line-height: 30px;
   padding: 0 30px;
-  width: 500px;
+  max-width: 400px;
   color: #444;
   background: mediumspringgreen;
   margin-top: 50px;

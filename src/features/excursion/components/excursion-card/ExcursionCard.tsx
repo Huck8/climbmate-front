@@ -7,7 +7,7 @@ import {
   TitleExcursionStyled,
   ExcursionCardContainer,
 } from './excursion-card-styled';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 interface ExcursionCardProps {
   excursion: Excursion;
@@ -32,9 +32,9 @@ const ExcursionCard: FC<ExcursionCardProps> = ({ excursion }) => {
         <p>Need Equipment: {excursion.equipment}</p>
         <p>Organizer: {excursion.creator}</p>
       </InfoExcursionStyled>
-      {/* <Link to={`/excursions-detail/${_id}`}> */}
-      <ButtonExcursionStyled>Adventure</ButtonExcursionStyled>
-      {/* </Link> */}
+      <Link to={`/excursions-detail/${_id}`}>
+        <ButtonExcursionStyled>Adventure</ButtonExcursionStyled>
+      </Link>
     </ExcursionCardContainer>
   );
 };

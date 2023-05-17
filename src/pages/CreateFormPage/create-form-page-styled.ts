@@ -6,6 +6,7 @@ export const CreateFormPageContainer = styled.section`
   padding: 2rem;
 
   height: 100vh;
+  background-repeat: no-repeat;
   h1 {
     text-transform: Uppercase;
     letter-spacing: 1px;

@@ -15,9 +15,12 @@ export const FooterStyled = styled.footer`
     align-items: center;
   }
   ul li {
-    color: red;
+    color: mediumspringgreen;
     width: 33%;
     text-align: center;
+    :hover {
+      color: blueviolet;
+    }
 
     img {
       width: 100px;

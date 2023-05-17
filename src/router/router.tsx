@@ -4,6 +4,7 @@ import CardPage from '../pages/Card/CardPage';
 
 import { LoginPage } from '../pages/Login/LoginPage';
 import CreateFormPage from '../pages/CreateFormPage/CreateFormPage';
+import ExcursionDetailPage from '../pages/ExcursionDetailPage/ExcursionDetailPage';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: '/excursions',
         element: <CardPage />,
+      },
+      {
+        path: '/excursions-detail/:_id',
+        element: <ExcursionDetailPage />,
       },
     ],
   },

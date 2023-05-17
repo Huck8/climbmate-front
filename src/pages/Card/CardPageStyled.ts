@@ -4,14 +4,14 @@ export const ExcursionHeroImageStyled = styled.div``;
 
 export const ExcursionCardPageStyled = styled.main`
   margin: auto;
-  height: 100vh;
 
   background: #f3f3f3;
-
+  padding-bottom: 3rem;
   .hero {
-    background-image: url('https://cdn.aarp.net/content/dam/aarp/tourism/national/2017/10/1140-maroon-bells-mountains-north-america-esp.imgcache.rev3ae52edfa9863c5cf8680f82006b8b2d.web.1140.655.jpg');
+    background-image: url('/assets/hero-image-climbmate.webp');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 500px;
     z-index: 99;
   }
@@ -19,7 +19,7 @@ export const ExcursionCardPageStyled = styled.main`
     justify-content: space-between;
     width: 1300px;
     justify-contente: center;
-    margin: 1rem auto;
+    margin: 1rem auto 0;
   }
 
   ul li article {

@@ -1,13 +1,21 @@
 import styled from 'styled-components';
 
-export const CreateFormPageStyled = styled.main`
-  background-image: url('assets/redmountains.webp');
-
+export const CreateFormPageContainer = styled.section`
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-    url('assets/redmountains.webp');
-
+    url('/assets/redmountains.webp');
   padding: 2rem;
-  height: 100vh;
+
+  height: 80vh;
+  h1 {
+    text-transform: Uppercase;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 3rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-family: sans-serif;
+    color: whitesmoke;
+  }
 `;
 
 export const ExcursionFormStatusFeedBackError = styled.div`

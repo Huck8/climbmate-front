@@ -4,7 +4,7 @@ export const ExcursionHeroImageStyled = styled.div``;
 
 export const ExcursionCardPageStyled = styled.main`
   margin: auto;
-
+  display: flex;
   background: #f3f3f3;
   padding-bottom: 3rem;
   .hero {
@@ -16,7 +16,7 @@ export const ExcursionCardPageStyled = styled.main`
     z-index: 99;
   }
   ul {
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 1300px;
     justify-contente: center;
     margin: 1rem auto 0;

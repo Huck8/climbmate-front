@@ -5,12 +5,12 @@ export const CreateFormPageContainer = styled.section`
     url('/assets/redmountains.webp');
   padding: 2rem;
 
-  height: 80vh;
+  height: 100vh;
   h1 {
     text-transform: Uppercase;
     letter-spacing: 1px;
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 1rem;
     text-align: center;
     font-family: sans-serif;

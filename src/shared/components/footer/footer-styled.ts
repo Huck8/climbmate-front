@@ -1,15 +1,18 @@
 import styled from 'styled-components';
 
 export const FooterStyled = styled.footer`
+  display: flex;
   background: #333;
   height: 150px;
   color: mediumspringgreen;
   font-weight: 600;
-  padding: 3rem;
+  padding: 2rem;
 
   ul {
     list-style: none;
     display: flex;
+    width: 100%;
+    align-items: center;
   }
   ul li {
     color: red;
@@ -17,7 +20,7 @@ export const FooterStyled = styled.footer`
     text-align: center;
 
     img {
-      width: 150px;
+      width: 100px;
     }
   }
 `;

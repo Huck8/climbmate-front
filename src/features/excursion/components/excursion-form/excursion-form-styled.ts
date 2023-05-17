@@ -3,17 +3,16 @@ export const ExcursionFormContainer = styled.form`
   display: flex;
   flex-direction: column;
   align-items: left;
-
   font-family: 'Nunito Sans', sans-serif;
-  margin: 0 auto;
+  margin: 30px auto;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 30px;
+  line-height: 20px;
   padding: 0 30px;
   max-width: 400px;
   color: #444;
   background: mediumspringgreen;
-  margin-top: 50px;
+  margin-top: 20px;
   border-radius: 30px;
   padding: 20px;
   label {

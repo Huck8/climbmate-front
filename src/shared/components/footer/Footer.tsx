@@ -4,7 +4,6 @@ import { FooterStyled } from './footer-styled';
 const Footer = () => {
   return (
     <FooterStyled>
-      Footer
       <ul>
         <li>Uno</li>
         <li>Dos</li>

@@ -5,7 +5,7 @@ import { Excursion } from '../../shared/models/excursion-model';
 import {
   createNewExcursion,
   getAllExcursions,
-  // getExcursionById,
+  getExcursionById,
 } from './excursion-api';
 
 interface ExcursionStatus {

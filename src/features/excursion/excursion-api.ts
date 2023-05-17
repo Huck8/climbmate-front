@@ -12,7 +12,6 @@ export const getAllExcursions = async () => {
 
   return response;
 };
-
 export const getExcursionById = async (id: string) => {
   const response = await fetch(
     // `${process.env.REACT_APP_API_URL}/api/v1/excursion/${id}`,
@@ -26,7 +25,6 @@ export const getExcursionById = async (id: string) => {
   );
   return response;
 };
-
 export const createNewExcursion = async (newExcursion: FormData) => {
   const response = await fetch(
     `${process.env.REACT_APP_API_URL}/api/v1/excursion`,

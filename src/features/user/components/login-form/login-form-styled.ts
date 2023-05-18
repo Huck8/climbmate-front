@@ -8,20 +8,20 @@ export const LoginFormStyled = styled.form`
 
   color: #333;
   display: flex;
-  margin: 4rem auto;
+  margin: 1rem auto 6rem;
   flex-direction: column;
+  justify-content: center;
 
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.3);
   @media (min-width: 767px) {
-    margin: 4rem 3rem;
     height: 500px;
   }
 `;
 
 export const Title = styled.h2`
   margin: 1rem 0px;
-  color: blueviolet;
+  color: white;
   text-shadow: rgba(10, 34, 32, 0.5) 2px 0px 5px;
   font-size: 1.4rem;
   text-align: center;

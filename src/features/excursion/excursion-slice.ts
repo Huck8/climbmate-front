@@ -121,6 +121,7 @@ export const excursionSlice = createSlice({
           state.status = APIStatus.IDLE;
           state.createExcursionStatus = 'success';
           state.excursionMessage = action.payload.msg;
+          state.excursion = action.payload.excursions;
         },
       )
       .addCase(createNewExcursionAsync.rejected, (state, action) => {
@@ -128,10 +129,7 @@ export const excursionSlice = createSlice({
         state.createExcursionStatus = 'error';
         state.excursionMessage = action.error.message;
       })
-      .addCase(getExcursionByIdAsync.pending, state => {
-        state.status = APIStatus.LOADING;
-        state.excursionStatus = 'loading';
-      })
+
       .addCase(
         getExcursionByIdAsync.fulfilled,
         (state, action: PayloadAction<CreateExcursionResponse>) => {
@@ -141,10 +139,15 @@ export const excursionSlice = createSlice({
           state.excursion = action.payload.excursions;
         },
       )
+
       .addCase(getExcursionByIdAsync.rejected, (state, action) => {
         state.status = APIStatus.ERROR;
         state.excursionStatus = 'error';
         state.excursionMessage = action.error.message;
+      })
+      .addCase(getExcursionByIdAsync.pending, state => {
+        state.status = APIStatus.LOADING;
+        state.excursionStatus = 'loading';
       });
   },
 });
